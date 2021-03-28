@@ -45,9 +45,10 @@ li::before {
 }
 
 .result {
-  width: 100%;
+  width: 90%;
   border: 2px solid #333;
   min-height: 500px;
+  margin: 0 auto;
   padding: 10px;
 }
 
@@ -57,6 +58,8 @@ li::before {
 
 .container {
   display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .container .box {
