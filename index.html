@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1>diaplayプロパティを視覚的に理解しよう。</h1>
+
+  <ul>
+    <li>displayの欄に「block,flex,grid」の中から1つを入力</li>
+    <li>widthの欄に「1～100」で数字を入力</li>
+    <li>heightの欄に「1以上の」数字を入力</li>
+    <li>「反映するボタンをクリック」</li>
+    <li>入力された値を受けて４つの箱が表示される</li>
+  </ul>
+
+
+  <div class="form">
+
+    
+    
+    <div class="form_inner">
+      
+      <label for="display">display</label>
+      <input id="display" type="text" value="">
+      
+    </div>
+
+    <div class="form_inner">
+      
+      <label for="width">width</label>
+      <input id="width" type="text" value=""> ％
+      
+    </div>
+
+    <div class="form_inner">
+      
+      <label for="height">height</label>
+      <input id="height" type="text" value=""> px
+      
+    </div>
+    
+    
+    
+    <input id="submit" type="submit" value="反映する">
+
+  </div>
+
+    
+
+
+  
+  
+
+
+  <div class="result">
+    <h2>結果</h2>
+    
+    <div class="container" id="container">
+
+      <div class="box box1">1</div>
+      <div class="box box2">2</div>
+      <div class="box box3">3</div>
+      <div class="box box4">4</div>
+      
+    </div>
+    
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
