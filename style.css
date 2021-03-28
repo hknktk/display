@@ -16,6 +16,7 @@ html {
 h1 {
   text-align: center;
   padding: 10px;
+  margin-top: 20px;
   font-weight: 700;
   font-size: 2.5rem;
   color: #4aafce;
@@ -58,6 +59,10 @@ li::before {
   display: none;
 }
 
+.form .flex {
+  display: none;
+}
+
 .result {
   width: 90%;
   border: 2px solid #333;
@@ -74,6 +79,10 @@ li::before {
   display: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .container .box {

@@ -15,9 +15,16 @@
     $container.style.display = $display_value;
 
     if ($container.style.display === "grid") {
-      console.log("grid");
       $not_grid.style.display = "none";
-    } else {
+    } 
+    else if($container.style.display === "flex") {
+      let $flex = document.getElementById('flex');
+      $flex.style.display = "inline";
+      let $flex_direction = document.getElementById('flex-direction');
+      let $flex_direction_value = $flex_direction.value;
+      $container.style.flexDirection = $flex_direction_value;
+
+
       $not_grid.style.display = "inline";
       let $width = document.getElementById("width");
       let $width_value = $width.value;
@@ -35,5 +42,7 @@
       $box3.style.height = $height_value + "px";
       $box4.style.height = $height_value + "px";
     }
+
+    
   });
 }

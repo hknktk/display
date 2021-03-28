@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  <h1>diaplayプロパティを視覚的に理解しよう。</h1>
+  <h1>displayプロパティを視覚的に理解しよう。</h1>
 
   <ul>
     <li>displayの欄に「block,flex,grid」の中から1つを入力</li>
@@ -30,35 +30,54 @@
     <div class="form_inner">
       
       <label for="display">display</label>
-      <input id="display" type="text" value="">
+      <select name="display" id="display">
+        <option value="" selected>選択してください</option>
+        <option value="block">block</option>
+        <option value="flex">flex</option>
+        <option value="grid">grid</option>
+        </select>
       
     </div>
 
-    <div class="grid">
+    <div class="grid" id="grid">
 
       <div class="form_inneer">
 
       </div>
     </div>
 
-    <div class="not_grid" id="not_grid">
+    <div class="flex" id="flex">
 
       
       <div class="form_inner">
         
-        <label for="width">width</label>
-        <input id="width" type="text" value=""> ％
-        
-      </div>
-      
-      <div class="form_inner">
-        
-        <label for="height">height</label>
-        <input id="height" type="text" value=""> px
+        <label for="flex-direction">flex-direction</label>
+        <select name="flex-direction" id="flex-direction">
+          <option value="" selected>選択してください</option>
+          <option value="row">row</option>
+          <option value="row-reverse">row-reverse</option>
+          <option value="column">column</option>
+          <option value="column-reverse">column-reverse</option>
+        </select>
         
       </div>
 
     </div>
+
+    <div class="not_grid" id="not_grid">
+
+      <div class="form_inner">
+        <label for="width">width</label>
+        <input id="width" type="text" value=""> ％
+      </div>
+      
+      <div class="form_inner">
+        <label for="height">height</label>
+        <input id="height" type="text" value=""> px
+      </div>
+
+    </div>
+
     
     
     
