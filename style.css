@@ -44,6 +44,10 @@ li::before {
   font-size: 1.8rem;
 }
 
+.form .not_grid {
+  display: none;
+}
+
 .result {
   width: 90%;
   border: 2px solid #333;
@@ -63,9 +67,18 @@ li::before {
 }
 
 .container .box {
+  position: relative;
   padding: 50px;
   width: auto;
   height: auto;
+}
+
+.container .box p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .container .box1 {
