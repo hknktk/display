@@ -66,7 +66,7 @@ li::before {
 .result {
   width: 90%;
   border: 2px solid #333;
-  min-height: 500px;
+  min-height: 80vh;
   margin: 0 auto;
   padding: 10px;
 }
@@ -76,6 +76,7 @@ li::before {
 }
 
 .container {
+  min-height: 80vh;
   display: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -83,6 +84,12 @@ li::before {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
 }
 
 .container .box {
