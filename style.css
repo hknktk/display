@@ -51,8 +51,13 @@ li::before {
   font-size: 1.6rem;
 }
 
-.form .form_inner label {
-  font-size: 1.8rem;
+.form .form_inner p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.form .grid {
+  display: none;
 }
 
 .form .not_grid {
@@ -61,6 +66,10 @@ li::before {
 
 .form .flex {
   display: none;
+}
+
+label {
+  font-size: 1.8rem;
 }
 
 .result {
@@ -90,13 +99,17 @@ li::before {
   -webkit-box-align: unset;
       -ms-flex-align: unset;
           align-items: unset;
+  -ms-grid-columns: unset;
+      grid-template-columns: unset;
+  -ms-grid-rows: unset;
+      grid-template-rows: unset;
 }
 
 .container .box {
   position: relative;
   padding: 20px;
-  width: auto;
-  height: auto;
+  width: 10%;
+  height: 50px;
 }
 
 .container .box p {

@@ -13,13 +13,10 @@
   <h1>displayプロパティを視覚的に理解しよう。</h1>
 
   <ul>
-    <li>displayの欄に「block,flex,grid」の中から1つを入力</li>
+    <li>displayの欄に「block,flex,grid」の中から1つを選択してください。</li>
     <li>「反映する」ボタンをクリック</li>
-    <p>※blockまたはflexの場合</p>
-    <li>widthの欄に「1～100」で数字を入力</li>
-    <li>heightの欄に「1以上の」数字を入力</li>
-    <li>再度、「反映する」ボタンをクリック</li>
-    <li>入力された値を受けて４つの箱が表示される</li>
+    <li>選択したプロパティを受け、新たに項目が追加されます。</li>
+    <li>初めと同様ドロップダウンメニューから選択していただき「反映する」ボタンをクリックしてください。。</li>
   </ul>
 
 
@@ -41,9 +38,35 @@
 
     <div class="grid" id="grid">
 
-      <div class="form_inneer">
-
+      <div class="form_inner">
+        <label for="grid-template-columns">grid-template-columns</label>
+        <input id="grid-template-columns" type="text" value=""> 
+        <p>※複数の値を入力する場合は間に半角スペースをお入れください。</p>
+        <p>※お手数ですが単位「px」をそれぞれの値にお付けください。</p>
+        <p>※「auto」も利用可能です。</p>
       </div>
+
+      <div class="form_inner">
+        <label for="grid-template-rows">grid-template-rows</label>
+        <input id="grid-template-rows" type="text" value=""> 
+        <p>※複数の値を入力する場合は間に半角スペースをお入れください。</p>
+        <p>※お手数ですが単位「px」をそれぞれの値にお付けください。</p>
+        <p>※「auto」も利用可能です。</p>
+      </div>
+
+      <div class="form_inner">
+        <label for="grid-column">grid-column</label>
+        <input id="grid-column" type="text" value=""> 
+        <p>※複数の値を入力する場合は間に半角スペースをお入れください。</p>
+      </div>
+
+
+      <div class="form_inner">
+        <label for="grid-row">grid-row</label>
+        <input id="grid-row" type="text" value=""> 
+        <p>※複数の値を入力する場合は間に半角スペースをお入れください。</p>
+      </div>
+
     </div>
 
     <div class="flex" id="flex">
@@ -82,8 +105,6 @@
         <select name="align-items" id="align-items">
           <option value="" selected>選択してください</option>
           <option value="center">center</option>
-          <option value="start">start</option>
-          <option value="end">end</option>
           <option value="flex-start">flex-start</option>
           <option value="flex-end">flex-end</option>
         </select>
