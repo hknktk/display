@@ -42,8 +42,14 @@ li::before {
   content: "・";
 }
 
+input#submit {
+  margin-bottom: 30px;
+  padding: 2px;
+}
+
 .form {
   margin-bottom: 30px;
+  padding: 10px;
 }
 
 .form .form_inner {
@@ -98,15 +104,11 @@ label {
   height: 50px;
   padding: 10px;
   border: 1px solid #333;
-  -webkit-box-shadow: 2px 2px 0px #530d08;
-          box-shadow: 2px 2px 0px #530d08;
   background-color: #f13232;
   color: #fff;
-  position: absolute;
-  right: 20%;
-  top: 40%;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   cursor: pointer;
+  margin-left: 20px;
 }
 
 .container {
