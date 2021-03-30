@@ -26,6 +26,16 @@
       $flex.style.display = "none";
       $grid.style.display = "inline";
 
+      $box1.style.width = "100%";
+      $box2.style.width = "100%";
+      $box3.style.width = "100%";
+      $box4.style.width = "100%";
+
+      $box1.style.height = "100%";
+      $box2.style.height = "100%";
+      $box3.style.height = "100%";
+      $box4.style.height = "100%";
+
       let $grid_template_columns = document.getElementById(
         "grid-template-columns"
       );
@@ -67,6 +77,7 @@
       let $grid_row4 = document.getElementById("b4_grid-row");
       let $grid_row4_value = $grid_row4.value;
       $box4.style.gridRow = $grid_row4_value;
+
     } else if ($container.style.display === "flex") {
       $flex.style.display = "inline";
       $grid.style.display = "none";
@@ -120,4 +131,10 @@
       $box4.style.height = $height_value + "px";
     }
   });
+
+  const $reset = document.getElementById('reset-button');
+
+  $reset.addEventListener('click' ,() => {
+    location.reload(true);
+  })
 }

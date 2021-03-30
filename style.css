@@ -84,6 +84,31 @@ label {
   font-size: 2rem;
 }
 
+.reset-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid #333;
+  -webkit-box-shadow: 2px 2px 0px #530d08;
+          box-shadow: 2px 2px 0px #530d08;
+  background-color: #f13232;
+  color: #fff;
+  position: absolute;
+  right: 20%;
+  top: 40%;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
 .container {
   min-height: 80vh;
   display: none;
